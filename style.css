@@ -1,0 +1,136 @@
+h1 {
+    padding: 25px;
+    color: white;
+}
+
+h4, h5 {
+    text-decoration: underline;
+}
+
+.small_image {
+    height: 100%;
+    width: 100%;
+}
+
+.large_image {
+    height: 100%;
+    width: 100%;
+    align-self: center;
+}
+
+.pic_header {
+    width: 150px;
+    float: right;
+}
+
+.bg_black {
+    background-color: black;
+}
+
+.blue_btm_border {
+    border-style: solid;
+    border-color: black black blue black;
+    border-width: 5px;
+}
+
+.center_text {
+    text-align: center;
+}
+
+.vert_center {
+    margin: auto;
+    width: 50%;
+}
+
+/* causes the sidebar to stick */
+.sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+/* includes a scrollbar when the viewport is smaller than the length of the sidebar */
+.sidebar-sticky {
+    top: 0;
+    height: calc(100vh - 48px);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+figcaption {
+    font-size: 0.7rem;
+}
+
+hr{
+    height: 1px;
+    background-color: blue;
+    border: none;
+}
+
+.tableFixHead {
+    overflow-y: auto;
+    height: 425px;
+}
+
+.tableFixHead, thead, th {
+    position: sticky;
+    top: 0;
+}
+
+th {
+    background:whitesmoke;
+}
+
+table  {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    text-align: center;
+}
+
+thead {
+    text-align: center;
+}
+
+.selected {
+    box-shadow: 5px 5px 10px gray;
+}
+
+.figHover:hover {
+    box-shadow: 5px 5px 10px gray;
+}
+
+@media (max-width: 910px) {
+    td {
+        font-size: small;
+    }
+    
+    thead {
+        font-size: small;
+    }
+
+    .small_text {
+        font-size: small;
+    }
+}
+
+@media (max-width: 768px) {
+    td {
+        font-size: x-small;
+    }
+    
+    thead {
+        font-size: x-small;
+    }
+}
+
+@media (max-width: 630px) {
+    td {
+        font-size: xx-small;
+    }
+    
+    thead {
+        font-size: xx-small;
+    }
+}
