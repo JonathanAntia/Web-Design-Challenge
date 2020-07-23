@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Bootstrap 3 Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Latitude vs Cloudiness</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="row blue_btm_border">
+        <div class="col-sm-6 col-lg-8 bg_black">
+            <h1>WeatherPy</h1>
+        </div>
+        <div class="col-sm-6 col-lg-4 bg_black d-none d-sm-block">
+            <a href="https://climate.nasa.gov/news/2839/nasas-airs-captures-polar-vortex-moving-in-over-us/" target="_blank">
+                <img src="Assets/polar-vortex.gif" alt="NASA's Atmospheric Infrared Sounder (AIRS) instrument showing global temperatures distribution in Celcius" class="pic_header">
+            </a>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <!-- Sidebar -->
+        <div class="row">
+            <nav class="col-md-3 bg-light d-md-block collapse">
+                <div class="sidebar-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item center_text">
+                            <h4>Latitude vs.:</h4>
+                        <!--  Sidebar images -->
+                            <a class="nav-link center_text" href="visualizations_cloudiness.html">
+                                <img src="Assets/Cloudiness_vs_Latitude.png" alt="Graph of cloudiness versus latitude" class="small_image selected">
+                                Cloudiness
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link center_text" href="visualizations_windspeed.html">
+                                <img src="Assets/WindSpeed_vs_Latitude.png" alt="Graph of windspeed versus latitude" class="small_image figHover">    
+                                Windspeed
+                            </a> 
+                        </li>  
+                        <li class="nav-item center_text">
+                            <a class="nav-link" href="visualizations_temperature.html">
+                                <img src="Assets/Temperature_vs_Latitude.png" alt="Graph of temperature versus latitude" class="small_image figHover">
+                                Temperature
+                            </a>
+                        </li>  
+                        <li>
+                            <a class="nav-link center_text" href="visualizations_humidity.html">
+                                <img src="Assets/Humidity_vs_Latitude.png" alt="Graph of humidity versus latitude" class="small_image figHover">
+                                Humidity
+                            </a>
+                        <li>
+                    </ul>
+                </div>
+            </nav>
+    
+            <main role="main" class="col-md-9">
+                <!-- Navigation bar -->
+                <nav class="d-none d-md-block">
+                    <ul class="nav nav-pills nav-justify pt-3">
+                        <li class="nav-item figHover"><a class="nav-link" href="index.html">
+                            <i class="glyphicon glyphicon-home"></i> Home</a></li>
+                        <li class="nav-item figHover"><a class="nav-link" href="comparisons.html">
+                            <i class="glyphicon glyphicon-th-large"></i> Comparisons</a></li>
+                        <li class="nav-item figHover"><a class="nav-link" href="data.html">
+                            <i class="glyphicon glyphicon-file"></i> Data</a></li>
+                    </ul> 
+                </nav>
+
+                <nav class="d-block d-md-none">
+                    <div class="nav nav-pills nav-justify pt-3">
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle figHover" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                <i class="glyphicon glyphicon-menu-hamburger"></i> Menu</a>
+                            <div class="dropdown-menu dropright">
+                                <a class="dropdown-item figHover" href="index.html">
+                                    <i class="glyphicon glyphicon-home"></i> Home</a>
+                                <a class="dropdown-toggle dropdown-item figHover" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="glyphicon glyphicon-stats"></i> Plots</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item figHover" href="visualizations_temperature.html">
+                                            <i class="glyphicon glyphicon-certificate"></i> Temperature</a>
+                                        <a class="dropdown-item figHover" href="visualizations_humidity.html">
+                                            <i class="glyphicon glyphicon-tint"></i> Humidity</a>
+                                        <a class="dropdown-item figHover" href="visualizations_windspeed.html">
+                                            <i class="glyphicon glyphicon-random"></i> Wind Speed</a>
+                                    </div>
+                                <a class="dropdown-item figHover" href="comparisons.html">
+                                    <i class="glyphicon glyphicon-th-large"></i> Comparisons</a>
+                                <a class="dropdown-item figHover" href="data.html">
+                                    <i class="glyphicon glyphicon-file"></i> Data</a>
+                            </div>
+                        </div> 
+                    </div>              
+                </nav>         
+                <hr> 
+                <h3 class='center_text pt-3'>Latitude vs Cloudiness</h3>
+                <br>
+                <div class="row pt-3">
+                    <div class="col-md-8">
+                        <figure class="center_text">
+                            <img src="Assets/Cloudiness_vs_Latitude.png" alt="Scatter plot of cloudiness versus latitude" class="large_image">
+                        </figure>
+                    </div>
+                    <div class="col-md-4 vert_center d-none d-md-block">
+                        <h5>Observations:</h5>
+                        <p class="small_text">Cloudiness shows no discernible relationship with latitude for current weather conditions.</p>
+                        <p class="small_text">Both hemispheres show very low Spearson correlation coefficients (r).</p>
+                    </div>
+                    <div class="col-md-4 d-md-none pt-3 px-4">
+                        <h5>Observations:</h5>
+                        <br>
+                        <p>Cloudiness shows no discernible relationship with latitude for current weather conditions.</p>
+                        <p>Both hemispheres show very low Spearson correlation coefficients (r).</p>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col-md-6">
+                        <figure class="center_text">
+                            <img src="Assets/Northern_Hemisphere_Cloudiness.png" alt="Correlation trend of cloudiness versus latitude in the northern hemisphere" class="large_image">
+                        </figure>
+                    </div>
+                    <div class="col-md-6">
+                        <figure class="center_text">
+                            <img src="Assets/Southern_Hemisphere_Cloudiness.png" alt="Correlation trend of cloudiness versus latitude in the southern hemisphere" class="large_image">
+                        </figure>
+                    </div>
+                </div>
+            </main>
+         </div>
+    </div>
+ 
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
