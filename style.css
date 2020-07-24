@@ -1,10 +1,20 @@
+p {
+    text-align: justify;
+}
+
 h1 {
     padding: 25px;
     color: white;
+    font-weight: bold;
+}
+
+h2, h3 {
+    font-weight: bold;
 }
 
 h4, h5 {
     text-decoration: underline;
+    font-weight: bold;
 }
 
 .small_image {
@@ -66,18 +76,9 @@ hr{
     border: none;
 }
 
-.tableFixHead {
-    overflow-y: auto;
-    height: 425px;
-}
-
-.tableFixHead, thead, th {
-    position: sticky;
-    top: 0;
-}
-
 th {
     background:whitesmoke;
+    text-align: center;
 }
 
 table  {
@@ -110,11 +111,6 @@ thead {
         font-size: small;
     }
 
-    .small_text {
-        font-size: small;
-    }
-}
-
 @media (max-width: 768px) {
     td {
         font-size: x-small;
@@ -132,5 +128,4 @@ thead {
     
     thead {
         font-size: xx-small;
-    }
 }
