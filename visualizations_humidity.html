@@ -19,21 +19,24 @@
 
   <body>
     <!-- Header -->
-    <div class="row blue_btm_border">
-        <div class="col-sm-6 col-lg-8 bg_black">
-            <h1>WeatherPy</h1>
-        </div>
-        <div class="col-sm-6 col-lg-4 bg_black d-none d-sm-block">
-            <a href="https://climate.nasa.gov/news/2839/nasas-airs-captures-polar-vortex-moving-in-over-us/" target="_blank">
-                <img src="Assets/polar-vortex.gif" alt="NASA's Atmospheric Infrared Sounder (AIRS) instrument showing global temperatures distribution in Celcius" class="pic_header">
-            </a>
+    <div class='container'>
+        <div class="row blue_btm_border">
+            <div class="col-md-8 bg_black">
+                <h1>WeatherPy</h1>
+            </div>
+            <div class="col-md-4 bg_black d-none d-sm-block">
+                <a href="https://climate.nasa.gov/news/2839/nasas-airs-captures-polar-vortex-moving-in-over-us/" target="_blank">
+                    <img src="Assets/polar-vortex.gif" alt="NASA's Atmospheric Infrared Sounder (AIRS) instrument showing global temperatures distribution in Celcius" class="pic_header">
+                </a>
+            </div>
         </div>
     </div>
 
-    <div class="container-fluid">
+
+    <div class="container">
         <!-- Sidebar -->
         <div class="row">
-            <nav class="col-md-3 bg-light d-md-block collapse">
+            <nav class="col-md-4 bg-light d-md-block collapse">
                 <div class="sidebar-sticky pt-3">
                     <ul class="nav flex-column">
                         <li class="nav-item center_text">
@@ -66,7 +69,7 @@
                 </div>
             </nav>
     
-            <main role="main" class="col-md-9">
+            <main role="main" class="col-md-8">
                 <!-- Navigation bar -->
                 <nav class="d-none d-md-block">
                     <ul class="nav nav-pills nav-justify pt-3">
@@ -115,26 +118,25 @@
                         </figure>
                     </div>
                     <div class="col-md-4 vert_center d-none d-md-block">
-                        <h5>Observations:</h5>
+                        <h4>Observations:</h4>
                         <p class="small_text">There is not discernible trend between latitude and current humidity.</p>
                         <p class="small_text">Both hemispheres show very low Spearson correlation coefficients (r).</p>
                         <p class="small_text">Places with current humidity below c. 20% are concentrated in the nothern hemisphere.</p>
                     </div>
                     <div class="col-md-4 d-md-none pt-3 px-4">
-                        <h5>Observations:</h5>
-                        <br>
+                        <h4>Observations:</h4>
                         <p>There is not discernible trend between latitude and current humidity.</p>
                         <p>Both hemispheres show very low Spearson correlation coefficients (r).</p>
                         <p>Places with current humidity below c. 20% are concentrated in the nothern hemisphere.</p>
                     </div>
                 </div>
-                <div class="row pt-3">
-                    <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6 pt-3">
                         <figure class="center_text">
                             <img src="Assets/Northern_Hemisphere_Humidity.png" alt="Correlation trend of humidity versus latitude in the northern hemisphere" class="large_image">
                         </figure>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 pt-3">
                         <figure class="center_text">
                             <img src="Assets/Southern_Hemisphere_Humidity.png" alt="Correlation trend of humidity versus latitude in the southern hemisphere" class="large_image">
                         </figure>
