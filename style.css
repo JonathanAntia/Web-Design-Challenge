@@ -1,3 +1,7 @@
+.row:before, .row:after {
+    display: flex !important;
+    }
+    
 p {
     text-align: justify;
 }
